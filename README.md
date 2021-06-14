@@ -1,4 +1,4 @@
-This is the react project for Fa-4 and you can view this website at the following link:
+
 
 # Getting Started with Create React App
 
