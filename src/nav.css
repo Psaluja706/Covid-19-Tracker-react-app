@@ -1,0 +1,238 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+body {
+ margin: 0;
+
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+ font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+#a {
+ color: black;
+ font-size: 12px;
+ left: 60px;
+}
+#b {
+ color: #4c75f2;
+ font-size: 10px;
+ left: 70px;
+}
+.dec {
+ display: table-cell;
+ position: relative;
+ vertical-align: middle;
+ font-weight: bold;
+}
+
+.fa-2x {
+ font-size: 2em;
+}
+.side {
+ left: 5px;
+}
+.icon {
+ position: relative;
+ display: table-cell;
+ width: 402px;
+ height: 70px;
+ text-align: center;
+ vertical-align: middle;
+ font-size: 25px;
+}
+.icon:hover {
+ color: #4c75f2;
+}
+.main-menu:hover,
+nav.main-menu.expanded {
+ width: 250px;
+ overflow: visible;
+}
+.main-menu {
+ background: #f6f6f7;
+
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ height: 100%;
+ left: 0;
+ width: 97px;
+ overflow: hidden;
+ -webkit-transition: width 0.05s linear;
+ transition: width 0.05s linear;
+
+ z-index: 1000;
+}
+
+body.dark-mode .main-menu {
+ background-color: #1e1e30;
+}
+.main-menu > ul {
+ margin: 16px -38px;
+}
+
+.main-menu li {
+ position: relative;
+ display: block;
+ width: 250px;
+}
+.main-menu li > a {
+ position: relative;
+ display: table;
+ border-collapse: collapse;
+ border-spacing: 0;
+ color: #999;
+ font-size: 14px;
+ text-decoration: none;
+ -webkit-transition: all 0.1s linear;
+ transition: all 0.1s linear;
+}
+.fa-sun-o {
+ padding-left: 7px;
+}
+.main-menu .nav-text {
+ position: relative;
+ display: table-cell;
+ vertical-align: middle;
+ width: 190px;
+ font-family: "Titillium Web", sans-serif;
+ font-weight: bold;
+}
+.covid {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: bold;
+}
+.special {
+ left: 55px;
+ top: 180px;
+ font-size: 13px;
+}
+
+.top {
+ visibility: hidden;
+}
+@media screen and (max-width: 768px) {
+ body.dark-mode li.nav-item a.nav-link {
+  color: #6c757d;
+ }
+ body {
+  background-color: #fefefe;
+ }
+
+ .top {
+  visibility: visible;
+ }
+ .lef {
+  visibility: hidden;
+ }
+}
+nav.main-menu-mobile {
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+
+li.nav-item {
+ font-size: 16px;
+ padding-top: 10px;
+ padding-left: 10px;
+ font-weight: 700;
+}
+body.dark-mode .nav-covid {
+ color: #bdbdbd !important;
+}
+body.dark-mode .navbar-brand {
+ color: #6c757d;
+}
+
+.demo {
+ align-items: center;
+ justify-content: center;
+}
+.demo .menu-icon {
+ transform: scale(1.2);
+}
+
+:root {
+ --bar-bg: #6c757d;
+}
+
+.menu-icon {
+ position: relative;
+ width: 30px;
+ height: 30px;
+ cursor: pointer;
+}
+.menu-icon .menu-icon__cheeckbox {
+ display: block;
+ width: 100%;
+ height: 100%;
+ position: relative;
+ cursor: pointer;
+ z-index: 2;
+ -webkit-touch-callout: none;
+ position: absolute;
+ opacity: 0;
+}
+.menu-icon div {
+ margin: auto;
+ position: absolute;
+ top: 0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ width: 22px;
+ height: 12px;
+ margin-right: 0px;
+}
+.menu-icon span {
+ position: absolute;
+ display: block;
+ width: 100%;
+ height: 2px;
+ background-color: var(--bar-bg, #000);
+ border-radius: 1px;
+ transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+}
+.menu-icon span:first-of-type {
+ top: 0;
+}
+.menu-icon span:last-of-type {
+ bottom: 0;
+}
+.menu-icon.active span:first-of-type,
+.menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
+ transform: rotate(45deg);
+ top: 5px;
+}
+.menu-icon.active span:last-of-type,
+.menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
+ transform: rotate(-45deg);
+ bottom: 5px;
+}
+.menu-icon.active:hover span:first-of-type,
+.menu-icon.active:hover span:last-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked + div span:first-of-type,
+.menu-icon:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+ width: 22px;
+}
+@media (min-width: 1024px) {
+ .menu-icon:hover span:first-of-type {
+  width: 26px;
+ }
+ .menu-icon:hover span:last-of-type {
+  width: 12px;
+ }
+}
+.has-subnav.one {
+ margin-top: 50px;
+}

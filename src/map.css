@@ -1,0 +1,58 @@
+svg {
+ width: 100%;
+ height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+ .mapName {
+  flex: 0;
+ }
+}
+.mapName {
+ height: 150px;
+}
+.stateHead {
+ line-break: strict;
+ color: #007bff;
+ font-weight: 600;
+}
+.numHead {
+ color: #007bff;
+ font-weight: 600;
+}
+.statType {
+ color: #007bff;
+ font-weight: 600;
+}
+
+.Legend {
+ margin-left: auto;
+ display: flex;
+ align-items: center;
+ margin-bottom: 10px;
+}
+.LegendColor {
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ margin-right: 20px;
+}
+.LegendColor.red {
+ background-color: #ff7b54;
+}
+.LegendColor.orange {
+ background-color: #ffd56b;
+}
+.LegendColor.green {
+ background-color: #ccffbd;
+}
+.LegendHead {
+ display: inline-block;
+ font-size: 14px;
+}
+.mapStat {
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 20px;
+}

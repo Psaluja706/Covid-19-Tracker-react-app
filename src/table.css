@@ -1,0 +1,79 @@
+td {
+ border: none !important;
+
+ border-radius: 3px;
+}
+
+.table-default,
+.table-active,
+thead {
+ background-color: #f6f6f7;
+ font-size: 14px;
+ color: #6c757d;
+ font-weight: 600;
+}
+
+body.dark-mode .table-default,
+body.dark-mode .table-active,
+body.dark-mode thead {
+ background-color: #1e1e30 !important;
+}
+
+.table-default:hover,
+.table-active:hover {
+ background-color: rgba(0, 0, 0, 0.09) !important;
+}
+/* .table-striped tbody tr:nth-of-type(odd) {
+ background-color: #f6f6f7;
+} */
+.table tbody tr:nth-of-type(odd) {
+ background-color: #f6f6f7;
+}
+body.dark-mode .table tbody tr:nth-of-type(odd) {
+ background-color: #1e1e30 !important;
+}
+.table tbody tr:nth-of-type(odd):hover {
+ background-color: rgba(0, 0, 0, 0.09) !important;
+}
+
+.heading {
+ font-size: 13px;
+ font-weight: 600 !important;
+ color: #6c757d !important;
+}
+
+.table-responsive {
+ padding-top: 5px;
+ margin-top: 50px;
+}
+table {
+ border-collapse: separate;
+ border-spacing: 4px;
+ min-width: 700px !important;
+}
+.state {
+ font-size: 14px;
+ color: #6c757d;
+ font-weight: 500;
+}
+#state-heading {
+ width: 230px;
+}
+@media screen and (max-width: 768px) {
+ #state-heading {
+  width: 150px;
+ }
+}
+
+.confirmed {
+ color: #dc3545 !important;
+}
+.active {
+ color: #007bff !important;
+}
+.recovered {
+ color: #28a745 !important;
+}
+.deaths {
+ color: #6c757d !important;
+}
